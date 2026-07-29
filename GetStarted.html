@@ -1,105 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
 <title>Get Started | A New Me™</title>
+
 
 <style>
 
 body{
     margin:0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI',Arial,sans-serif;
     background:#eef2f7;
-    color:#333;
 }
 
-header{
-    background:#0d47a1;
+
+.header{
+
+    background:linear-gradient(135deg,#1f3c88,#2a5298);
     color:white;
     text-align:center;
-    padding:50px 20px;
+    padding:30px 20px;
+
 }
+
+
+.back-btn{
+
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 24px;
+    background:white;
+    color:#1f3c88;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+
+}
+
 
 .container{
+
     max-width:1000px;
     margin:auto;
-    padding:40px 20px;
+    padding:20px;
+
 }
+
+
+.grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+
+}
+
 
 .card{
+
     background:white;
-    padding:30px;
-    margin-bottom:25px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    padding:20px;
+    border-radius:14px;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+
 }
 
-h1,h2,h3{
-    color:#0d47a1;
+
+.card h3{
+
+    margin-top:0;
+    color:#1f3c88;
+
 }
+
+
+.notice{
+
+    background:#fff8e1;
+    border-left:5px solid #d4af37;
+    padding:18px;
+    border-radius:10px;
+    margin-bottom:25px;
+    line-height:1.7;
+
+}
+
 
 .button{
+
     display:inline-block;
-    margin-top:20px;
-    padding:14px 30px;
-    background:#1976d2;
+    margin-top:15px;
+    padding:12px 24px;
+    background:#1f3c88;
     color:white;
     text-decoration:none;
-    border-radius:6px;
+    border-radius:8px;
     font-weight:bold;
+
 }
 
-.button:hover{
-    background:#1565c0;
-}
 
-.note{
-    background:#fff8dc;
-    border-left:5px solid #f4b400;
-    padding:20px;
-    margin-top:25px;
-}
+.footer{
 
-footer{
-    background:#0d47a1;
-    color:white;
     text-align:center;
-    padding:35px;
-    margin-top:40px;
+    padding:20px;
+    font-size:13px;
+    color:#555;
+
 }
+
 
 </style>
 
+
 </head>
+
 
 <body>
 
-<header>
 
-<h1>Let's Get Started</h1>
+<div class="header">
+
+
+<h1>A New Me™</h1>
+
+
+<h2>Get Started</h2>
+
 
 <p>
-Thank you for your interest in <strong>A New Me™</strong>.
-We're excited to learn more about your organization and how we can support your mission.
+
+Begin your organization's journey with A New Me™.
+
 </p>
 
-</header>
+
+<a href="index.html#organization-solutions" class="back-btn">
+
+← Back to Organization Portal
+
+</a>
+
+
+</div>
+
 
 <div class="container">
 
-<div class="card">
 
-<h2>Step 1</h2>
+<div class="notice">
 
-<h3>Complete an Organization Consultation</h3>
+
+<strong>Welcome to A New Me™</strong><br><br>
+
+
+Thank you for your interest in bringing A New Me™ to your organization.
+
+We want to learn about your mission, your programs, and the individuals you serve so we can help create the right solution for your needs.
+
+
+</div>
+
+
+<div class="grid">
+
+ <div class="card">
+
+<h3>1️⃣ Complete an Organization Consultation</h3>
 
 <p>
 
-Tell us about your organization, the individuals you serve, your goals, and how A New Me™ can best support your team.
+Tell us about your organization, the people you serve, your programs, and what you would like A New Me™ to help you accomplish.
 
 </p>
+
+
+<p>
+
+Your consultation helps us understand:
+
+</p>
+
+
+<ul>
+
+<li>Organization type</li>
+
+<li>Number of participants served</li>
+
+<li>Programs and services offered</li>
+
+<li>Features your organization needs</li>
+
+<li>Your implementation goals</li>
+
+</ul>
+
 
 <a href="OrganizationConsultation.html" class="button">
 
@@ -107,167 +209,341 @@ Complete Consultation
 
 </a>
 
-</div>
-
-<div class="card">
-
-<h2>Step 2</h2>
-
-<h3>Request a Personalized Demonstration (Optional)</h3>
-
-<p>
-
-If you'd like to see A New Me™ in action before subscribing, simply request a demonstration within the consultation form.
-
-We'll schedule a live walkthrough and answer any questions you may have.
-
-</p>
 
 </div>
 
+
+
 <div class="card">
 
-<h2>Step 3</h2>
 
-<h3>Review & Recommendation</h3>
+<h3>2️⃣ Request a Demonstration</h3>
+
 
 <p>
 
-After reviewing your consultation, we'll recommend the subscription plan that best fits your organization's participant count and needs.
+Want to see how A New Me™ can support your organization before moving forward?
+
+You can request a personalized demonstration where we review the platform features and answer your questions.
 
 </p>
+
+
+<p>
+
+During the demonstration, we can discuss:
+
+</p>
+
+
+<ul>
+
+<li>Participant Management</li>
+
+<li>Referral Management</li>
+
+<li>Organization Tools</li>
+
+<li>Reporting Features</li>
+
+<li>Customization Options</li>
+
+</ul>
+
 
 </div>
 
+
+
 <div class="card">
 
-<h2>Step 4</h2>
 
-<h3>Ready to Subscribe?</h3>
+<h3>3️⃣ Review Your Organization's Needs</h3>
+
 
 <p>
 
-If you're ready to move forward after your consultation, we'll provide your organization with a secure payment link and begin your onboarding process.
+After receiving your consultation, we will review your organization's goals and recommend the best solution based on your needs.
 
 </p>
+
+
+<p>
+
+Every organization is different. A New Me™ is designed to be customized around your mission, programs, and workflow.
+
+</p>
+
 
 </div>
 
+
+
 <div class="card">
 
-<h2>Need Assistance?</h2>
+
+<h3>4️⃣ Subscription & Onboarding</h3>
+
 
 <p>
 
-If you're ready to get started or have any questions before subscribing, please email us.
-
-We'll be happy to answer your questions and help determine the best solution for your organization.
+Once your organization decides to move forward, we will provide the next steps for account setup and subscription.
 
 </p>
 
+
 <p>
+
+Organizations will receive a secure payment option and onboarding information to begin using A New Me™.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+<br>
+
+
+<div class="notice">
+
+
+<strong>Ready to Get Started?</strong><br><br>
+
+
+If you are interested in bringing A New Me™ to your organization, contact us today.
+
+<br><br>
+
 
 <strong>Email:</strong><br>
 
-<a href="mailto:jonestadasha@gmail.com">jonestadasha@gmail.com</a>
+<a href="mailto:jonestadasha@gmail.com">
 
-</p>
-
-<a href="mailto:jonestadasha@gmail.com" class="button">
-
-Email Us to Get Started
+jonestadasha@gmail.com
 
 </a>
 
+
+<br><br>
+
+
+<strong>Phone:</strong><br>
+
+903-617-0239
+
+
 </div>
 
-<div class="note">
+   id="k2l8qp"
+<div class="notice">
 
-<h3>Launch Pricing</h3>
+<strong>Launch Information</strong><br><br>
+
+Organizations that join during the A New Me™ launch period will receive introductory pricing.
+
+As A New Me™ continues to grow with new features, tools, and improvements, pricing for future organizations may change.
+
+Organizations that subscribe during the launch period will keep their launch pricing as long as their subscription remains active.
+
+</div>
+
+
+<div class="card">
+
+
+<h3>Payment Information</h3>
+
 
 <p>
 
-Organizations that subscribe during our launch period will receive introductory pricing.
-
-As A New Me™ continues to grow with additional features and enhancements, pricing for future customers may change.
-
-Organizations that subscribe during the launch period will keep their introductory pricing for as long as their subscription remains active.
+After your organization consultation is completed and you decide to move forward, you will receive instructions for subscription and account setup.
 
 </p>
 
+
+<p>
+
+Secure online payments will be available through Stripe.
+
+</p>
+
+
+<ul>
+
+<li>Credit Card Payments</li>
+
+<li>Debit Card Payments</li>
+
+<li>Business Payment Cards</li>
+
+</ul>
+
+
 </div>
+
 
 <!--
 
 ======================================================
-DEVELOPER NOTES - REMOVE BEFORE GOING LIVE
+DEVELOPER NOTES - DO NOT DISPLAY ON LIVE WEBSITE
 ======================================================
 
-Current Launch Process
 
-Pricing Page
-      ↓
+CURRENT ORGANIZATION START PROCESS:
+
+
+Pricing.html
+
+↓
+
 GetStarted.html
-      ↓
-OrganizationConsultation.html
-      ↓
-Review Consultation
-      ↓
-Email Organization
-      ↓
-Send Stripe Payment Link
-      ↓
-Organization Pays
-      ↓
-Create Organization Account
-      ↓
-Send Welcome Email
 
-Future Updates
+↓
+
+OrganizationConsultation.html
+
+↓
+
+Review Organization Needs
+
+↓
+
+Contact Organization
+
+↓
+
+Send Stripe Payment Link
+
+↓
+
+Organization Completes Payment
+
+↓
+
+Create Organization Account
+
+↓
+
+Send Welcome Information
+
+
+
+STRIPE SETUP:
+
 
 □ Create Stripe Account
 
-□ Create Monthly Subscription Plans
 
-   Small Organization - $39/month
+□ Create Subscription Products:
 
-   Medium Organization - $79/month
 
-   Large Organization - $149/month
+Small Organization
 
-□ Replace "Email Us to Get Started" button
-   with Stripe Checkout button
+$39/month
 
-□ Automatically create organization account
-   after successful payment
+1-25 Active Participants
 
-□ Redirect customer to ThankYou.html
 
-□ Send automatic Welcome Email
+
+Medium Organization
+
+$79/month
+
+26-100 Active Participants
+
+
+
+Large Organization
+
+$149/month
+
+101-250 Active Participants
+
+
+
+Enterprise
+
+Custom Pricing
+
+
+
+FUTURE CONNECTIONS:
+
+
+□ Replace payment instructions with Stripe Checkout
+
+
+□ Add Subscribe Now button when ready
+
+
+□ Automatically confirm payment
+
+
+□ Create organization account after payment
+
+
+□ Send automatic welcome email
+
+
+□ Connect subscription status to organization dashboard
+
+
+
+PARTICIPANT LIMIT SYSTEM:
+
+
+Small Organization
+
+Maximum 25 Active Participants
+
+
+Medium Organization
+
+Maximum 100 Active Participants
+
+
+Large Organization
+
+Maximum 250 Active Participants
+
+
+
+SYSTEM SHOULD:
+
+
+□ Count active participants automatically
+
+
+□ Prevent adding participants after plan limit
+
+
+□ Show upgrade message when limit is reached
+
+
+Example:
+
+"Your organization has reached the participant limit for your current plan. Please upgrade to continue adding participants."
+
 
 ======================================================
 
 -->
 
+
 </div>
 
-<footer>
 
-<h2>Ready to Make a Difference?</h2>
+<div class="footer">
 
-<p>
+Every organization is unique. A New Me™ can be customized to meet your specific operational needs.
 
-Complete your consultation today and discover how A New Me™ can support your organization and the people you serve.
+</div>
 
-</p>
-
-<a href="OrganizationConsultation.html" class="button">
-
-Get Started
-
-</a>
-
-</footer>
 
 </body>
-</html>
+
+</html>  
