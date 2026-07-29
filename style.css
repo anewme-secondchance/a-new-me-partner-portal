@@ -31,23 +31,29 @@ body{
 
 }
 
+
 /*=================================
-COLORS
+A NEW ME™ ORGANIZATION COLORS
 ==================================*/
 
 :root{
 
-    --blue:#8ED8F8;
-
-    --green:#58B947;
-
-    --dark:#1F1F1F;
-
+    --blue:#1E3A5F;          /* Primary Navy */
+    --green:#2E8B57;         /* Success / Action */
+    --dark:#1F2937;          /* Main Text */
     --white:#FFFFFF;
+    --gray:#F6F8FB;          /* Background */
 
-    --gray:#F4F4F4;
+    --secondary:#2F5D7E;     /* Header Gradient */
+    --gold:#C8A23A;          /* Highlights */
+    --light:#EEF3F8;         /* Light Cards */
+    --border:#D7E2EC;
 
-    --shadow:0 8px 25px rgba(0,0,0,.12);
+    --shadow:0 8px 25px rgba(0,0,0,.10);
+
+    --radius:18px;
+
+}
 
   /*=================================
 HERO SECTION
@@ -59,12 +65,11 @@ HERO SECTION
 
     min-height:320px;
 
-    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url("images/hero.jpg");
-
-    background-size:cover;
-
-    background-position:center;
+    background:linear-gradient(
+        135deg,
+        var(--blue),
+        var(--secondary)
+    );
 
     display:flex;
 
@@ -75,12 +80,6 @@ HERO SECTION
     text-align:center;
 
     padding:60px 20px;
-
-}
-
-.coffee-overlay{
-
-    max-width:850px;
 
 }
 
@@ -98,7 +97,7 @@ HERO SECTION
 
 .coffee-overlay p{
 
-    color:#F8F8F8;
+    color:#E6EEF5;
 
     font-size:20px;
 
@@ -125,7 +124,6 @@ MENU SECTION
 /*=================================
 DRINK CARD
 ==================================*/
-
 .drink-card{
 
     display:flex;
@@ -142,18 +140,22 @@ DRINK CARD
 
     margin-bottom:40px;
 
-    box-shadow:var(--shadow);
+    box-shadow:0 10px 30px rgba(30,58,95,.10);
+
+    border:1px solid var(--border);
 
     transition:.3s;
 
 }
-
 .drink-card:hover{
 
     transform:translateY(-8px);
 
-}
+    box-shadow:0 18px 40px rgba(30,58,95,.18);
 
+    border-color:var(--blue);
+
+}
 .drink-image{
 
     flex:1;
@@ -182,9 +184,11 @@ DRINK CARD
 
     font-size:34px;
 
-    color:var(--dark);
+    color:var(--blue);
 
     margin-bottom:15px;
+
+    font-weight:700;
 
 }
 
@@ -192,13 +196,13 @@ DRINK CARD
 
     font-size:18px;
 
-    color:#555;
+    color:#5F6C7B;
 
     margin-bottom:25px;
 
     line-height:1.8;
 
-}  
+}
 
 /*=================================
 SIZE BOXES
@@ -278,7 +282,11 @@ BUTTONS & BADGES
 
 .drink-button{
 
-    background:var(--green);
+    background:linear-gradient(
+        135deg,
+        var(--green),
+        #237A52
+    );
 
     color:var(--white);
 
@@ -290,9 +298,13 @@ BUTTONS & BADGES
 
     font-size:17px;
 
-    font-weight:bold;
+    font-weight:700;
+
+    letter-spacing:.4px;
 
     cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(46,139,87,.25);
 
     transition:.3s;
 
@@ -300,9 +312,15 @@ BUTTONS & BADGES
 
 .drink-button:hover{
 
-    background:#46963A;
+    background:linear-gradient(
+        135deg,
+        #237A52,
+        #1C6644
+    );
 
-    transform:translateY(-3px);
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 28px rgba(46,139,87,.35);
 
 }
 
@@ -376,7 +394,7 @@ BACK MENU
 
     text-decoration:none;
 
-    background:var(--green);
+    background:var(--blue);
 
     color:var(--white);
 
@@ -384,7 +402,9 @@ BACK MENU
 
     border-radius:40px;
 
-    font-weight:bold;
+    font-weight:700;
+
+    box-shadow:0 8px 20px rgba(30,58,95,.20);
 
     transition:.3s;
 
@@ -392,23 +412,30 @@ BACK MENU
 
 .menu-btn:hover{
 
-    background:#46963A;
+    background:var(--secondary);
+
+    transform:translateY(-3px);
 
 }
-
 /*=================================
 FOOTER
 ==================================*/
 
 .menu-footer{
 
-    background:var(--dark);
+    background:linear-gradient(
+        135deg,
+        var(--blue),
+        var(--secondary)
+    );
 
     color:var(--white);
 
     text-align:center;
 
-    padding:50px 20px;
+    padding:60px 20px;
+
+    margin-top:60px;
 
 }
 
@@ -416,17 +443,23 @@ FOOTER
 
     font-size:30px;
 
-    margin-bottom:20px;
+    margin-bottom:15px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
 
 }
 
 .menu-footer p{
 
-    margin:10px 0;
+    margin:8px 0;
 
-    color:#DDDDDD;
+    color:#E7EDF5;
 
-}  
+    font-size:16px;
+
+}
 
 /*=================================
 RESPONSIVE DESIGN
@@ -598,7 +631,7 @@ background:#ECECEC;
 
 ::-webkit-scrollbar-thumb{
 
-background:var(--green);
+background:var(--blue);
 
 border-radius:20px;
 
@@ -606,7 +639,7 @@ border-radius:20px;
 
 ::-webkit-scrollbar-thumb:hover{
 
-background:#46963A;
+background:var(--secondary);
 
 }
 
@@ -638,12 +671,11 @@ overflow-x:hidden;
 
 ::selection{
 
-background:var(--blue);
+background:var(--green);
 
-color:#000;
+color:var(--white);
 
 }
-
   
 
     --radius:18px;
@@ -706,9 +738,13 @@ align-items:center;
 
 padding:15px 40px;
 
-background:#ffffff;
+background:linear-gradient(
+135deg,
+var(--blue),
+var(--secondary)
+);
 
-box-shadow:0 4px 15px rgba(0,0,0,.1);
+box-shadow:var(--shadow);
 
 }
 
@@ -734,7 +770,7 @@ text-decoration:none;
 
 font-weight:700;
 
-color:#222;
+color:var(--white);
 
 transition:.3s;
 
@@ -742,7 +778,7 @@ transition:.3s;
 
 .navbar a:hover{
 
-color:var(--green);
+color:#D7E8F6;
 
 }
 
